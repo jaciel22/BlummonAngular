@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD Icons with RouterLink</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .icon-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 2 columns */
+      gap: 20px;
+      text-align: center;
+    }
+    .icon {
+      font-size: 40px;
+      cursor: pointer;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="icon-container">
+    <a class="icon" routerLink="/users">📋<br>Listar usuarios</a>
+    <a class="icon" routerLink="/update">✏️<br>Actualizar usuarios</a>
+    <a class="icon" routerLink="/delete">🗑️<br>Eliminar usuarios</a>
+    <a class="icon" routerLink="/create">➕<br>Agregar usuarios</a>
+    <a class="icon" routerLink="/login">🔍<br>Buscar usuario (login)</a>
+  </div>
+</body>
+</html>

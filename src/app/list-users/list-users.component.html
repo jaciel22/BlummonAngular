@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Usuarios</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .user-list {
+      max-width: 600px;
+      border: 1px solid #ccc;
+      padding: 20px;
+    }
+    .user {
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+    }
+    .user-property {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+    <div class="user-list">
+        <div *ngFor="let user of users.resultado.usuarios" class="user">
+          <div><span class="user-property">ID:</span> {{ user.idUser }}</div>
+          <div><span class="user-property">Nombre:</span> {{ user.name }}</div>
+          <div><span class="user-property">Apellido:</span> {{ user.lastName }}</div>
+          <div><span class="user-property">Nombre de usuario:</span> {{ user.username }}</div>
+          <div><span class="user-property">Contraseña:</span> ***</div>
+          <div><span class="user-property">Fecha de creación:</span> {{ user.creationDate | date }}</div>
+        </div>
+      </div>
+      
+      
+</body>
+</html>

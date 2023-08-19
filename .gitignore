@@ -1,0 +1,21 @@
+# Ignorar archivos generados por el CLI de Angular
+/node_modules
+/dist
+/tmp
+/angular-cli.json
+/.angular-cli.json
+/*.js.map
+
+# Ignorar archivos de configuración local
+/.vscode
+/.idea
+/.DS_Store
+
+# Ignorar archivos de respaldo
+*~
+*.swp
+*.bak
+
+# Ignorar archivos de caché
+.cache
+.cache-loader

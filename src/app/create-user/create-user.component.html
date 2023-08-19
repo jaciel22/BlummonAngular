@@ -1,0 +1,22 @@
+<div class="update-form">
+    <h2>Creación de usuario</h2>
+    <form (ngSubmit)="createUser()">
+      <div>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" [(ngModel)]="userToUpdate.name" name="name" required>
+      </div>
+      <div>
+        <label for="lastName">Apellido:</label>
+        <input type="text" id="lastName" [(ngModel)]="userToUpdate.lastName" name="lastName" required>
+      </div>
+      <div>
+        <label for="username">Nombre de Usuario:</label>
+        <input type="text" id="username" [(ngModel)]="userToUpdate.username" name="username" required>
+      </div>
+      <div>
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" [(ngModel)]="userToUpdate.password" name="password" required>
+      </div>
+      <button type="submit">Crear usuario</button>
+    </form>
+  </div>
